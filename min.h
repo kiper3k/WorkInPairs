@@ -1,7 +1,7 @@
-int min(int &array)
+int min(int array)
 {
      int length = array.size( );  // establish size of array
-     int min = array[0];       // start with max = first element
+     int min = array[0];       // start with min = first element
 
      for(int i = 1; i<length; i++)
      {
