@@ -1,6 +1,6 @@
 #include <time.h>
 
-double generator()
+int generator()
 {
 	int t[10];
 	srand ( time(NULL) );
@@ -9,4 +9,5 @@ double generator()
 	{
 		t[i]=rand() % 101;
 	}
+	return t
 }
