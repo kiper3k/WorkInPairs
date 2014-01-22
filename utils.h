@@ -1,13 +1,12 @@
-int generator()
+int* generator()
 {
-	int t[10];
+	int* t = new int(10);
 	srand ( time(NULL) );
-
 	for(int i=0;i<10;i++)
 	{
 		t[i]=rand() % 101;
 	}
-	return t
+	return t;
 }
 
 void wypisz(int tab[])
@@ -28,9 +27,9 @@ int suma(int tab[])
 	return res;
 }
 
-int min(int array)
+int min(int* array, int size)
 {
-     int length = array.size( );  // establish size of array
+     int length = size;  // establish size of array
      int min = array[0];       // start with min = first element
 
      for(int i = 1; i<length; i++)
@@ -41,9 +40,9 @@ int min(int array)
      return min;                // return min value in array
 }
 
-int max(int array)
+int max(int* array, int size)
 {
-     int length = array.size( );  // establish size of array
+     int length = size;  // establish size of array
      int max = array[0];       // start with max = first element
 
      for(int i = 1; i<length; i++)
